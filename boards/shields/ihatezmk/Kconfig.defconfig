@@ -1,0 +1,6 @@
+if SHIELD_IHATEZMK
+
+config ZMK_KEYBOARD_NAME
+    default "ihatezmk"
+
+endif # SHIELD_IHATEZMK
