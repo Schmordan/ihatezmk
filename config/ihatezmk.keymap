@@ -12,14 +12,7 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp B>, <&kp C>;
-        };
-
-        td1: td1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD1";
-            #binding-cells = <0>;
+            // tapping-term-ms = <200>; default is 200ms
             bindings = <&kp A>, <&kp B>, <&kp C>;
         };
     };
@@ -32,7 +25,7 @@
 
         default_layer {
             bindings = <
-&td1  &studio_unlock
+            &td0  &studio_unlock
             >;
 
             sensor-bindings = <
@@ -42,7 +35,7 @@
 
         fn_layer {
             bindings = <
-&td0  &bt BT_CLR_ALL
+            &td0  &bt BT_CLR_ALL
             >;
         };
 

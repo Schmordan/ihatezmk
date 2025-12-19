@@ -1,9 +1,12 @@
 {
+  "id": "ihatezmk",
+  "name": "ihatezmk",
   "layouts": {
-    "Default Layout": {
+    "default_layout": {
+      "name": "default_layout",
       "layout": [
-        { "x": 0.0, "y": 0.0 },
-        { "x": 1.0, "y": 0.0 }
+        { "row": 0, "col":  0, "x": 0.0, "y": 0.0 },
+        { "row": 0, "col":  1, "x": 1.0, "y": 0.0 }
       ]
     }
   }
