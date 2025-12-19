@@ -26,6 +26,12 @@
             tapping-term-ms = <200>;
             bindings = <&a_tog 0 0 &to 1 &to 2>;
         };
+        
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
     };
 
     // Define a default keymap here.
@@ -60,7 +66,7 @@
             >;
 
             sensor-bindings = <
-            &kp LGUI(&inc_dec_kp Z Y)
+            &rgb_encoder
             >;
         };
 
