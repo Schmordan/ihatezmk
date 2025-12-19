@@ -17,14 +17,14 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&to>;
+            bindings = <&studio_unlock>, <&to 0>;
         };
 
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&a_tog A 0 &to 1 &to 2>;
+            bindings = <&a_tog &to 1 &to 2>;
         };
     };
 
