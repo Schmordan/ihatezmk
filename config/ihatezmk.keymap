@@ -39,7 +39,7 @@
 
         default_layer {
             bindings = <
-            &rgb_ug RGB_TOG  &td0
+            &rgb_ug RGB_TOG &td0
             >;
 
             sensor-bindings = <
@@ -49,7 +49,7 @@
 ///////////////////////////////////
         fn_layer {
             bindings = <
-            &rgb_ug RGB_EFF  &td0
+            &rgb_ug RGB_EFF &td0
             >;
 
             sensor-bindings = <
