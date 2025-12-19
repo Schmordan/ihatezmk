@@ -8,12 +8,26 @@
 &led_strip { chain-length = <1>; };
 
 / {
+
+    macros {
+        lto_a: lto_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &to 0>
+                , <&macro_press &kp A>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp A>
+                ;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp A &tog 1 &tog 2>;
+            bindings = <&lto_a &to 1 &to 2>;
         };
     };
 
