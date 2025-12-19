@@ -20,10 +20,15 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
+    
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
 
     chosen {
         zmk,physical-layout = &default_layout;
         zmk,underglow = &led_strip;
+        zmk,battery = &vbatt;
     };
 
     kscan: kscan {
