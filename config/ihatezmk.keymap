@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp A>, <&tog 1>, <&tog 2>;
+            bindings = <&kp A>, <&kp B>, <&kp C>;
         };
     };
     // Define a default keymap here.
@@ -34,7 +34,6 @@
         };
 
         fn_layer {
-            display-name = "Fn";
             bindings = <
                 &td0 &bt BT_CLR_ALL
             >;
