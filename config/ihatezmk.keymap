@@ -17,7 +17,10 @@
 
         default_layer {
             bindings = <
-                &bt BT_CLR_ALL &studio_unlock
+                &bt BT_CLR &studio_unlock
+            >;
+            sensor-bindings = <
+            &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
     };
