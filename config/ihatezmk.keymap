@@ -11,6 +11,14 @@
 };
 
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&tog 1>, <&tog 2>;
+        };
+    };
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
@@ -18,7 +26,7 @@
 
         default_layer {
             bindings = <
-                &bt BT_CLR &studio_unlock
+                &td0 &studio_unlock
             >;
             sensor-bindings = <
             &inc_dec_kp C_VOL_UP C_VOL_DN
@@ -27,7 +35,9 @@
 
         fn_layer {
             display-name = "Fn";
-            status = "reserved";
+            bindings = <
+                &td0 &bt BT_CLR_ALL
+            >;
         };
 
         extra1 {
