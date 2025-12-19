@@ -24,10 +24,10 @@
             &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
-        
+
         fn_layer {
             display-name = "Fn";
-            bindings = // etc.
+            status = "reserved";
         };
 
         extra1 {
