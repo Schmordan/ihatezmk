@@ -60,7 +60,7 @@
             >;
 
             sensor-bindings = <
-            LGUI(&inc_dec_kp Z Y)
+            &kp LGUI(&inc_dec_kp Z Y)
             >;
         };
 
