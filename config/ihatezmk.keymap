@@ -26,13 +26,6 @@
             tapping-term-ms = <200>;
             bindings = <&a_tog A 0 &to 1 &to 2>;
         };
-
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <3>;
-            tapping-term-ms = <500>;
-            bindings = <&kp>, <&kp>, <&kp>;
-        };
     };
 
     // Define a default keymap here.
