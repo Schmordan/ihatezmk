@@ -14,17 +14,17 @@
     behaviors {
         a_tog: behavior_a_tog {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&studio_unlock &to 0>;
+            bindings = <&studio_unlock>, <&to>;
         };
 
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&a_tog &to 1 &to 2>;
+            bindings = <&a_tog 0 &to 1 &to 2>;
         };
     };
 
