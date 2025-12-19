@@ -17,7 +17,7 @@
 
         default_layer {
             bindings = <
-                &rgb_ug RGB_TOG &kp B
+                &rgb_ug RGB_TOG &studio_unlock
             >;
         };
     };
